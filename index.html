@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salary Stopwatch</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <template id="start-screen">
+            <div>
+                <span>
+                    <pre><h1>My salary is $ </h1></pre>
+                    <input id="salary-input" type="number" min="0.1" step="0.1" placeholder="20">
+                    <pre><h1> per hour.</h1></pre>
+                </span>
+                <button onclick="startStopwatch()">Start Stopwatch</button>
+            </div>
+        </template>
+        
+        <template id="stopwatch-screen">
+            <div id="stopwatch">
+                <h1 id="stopwatch-time"></h1>
+                <h2 id="stopwatch-salary"></h2>
+                <button onclick="goToInputScreen()">Change Salary</button>
+            </div>
+        </template>
+
+        <div id="screen-container"></div>
+    </body>
+    <script src="index.js"></script>
+</html>

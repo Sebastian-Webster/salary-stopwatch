@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #2E3440;
+    color: #ECEFF4;
+}
+
+div, span, body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    flex-direction: row;
+}
+
+#stopwatch h1 {
+    font-size: 500%;
+    margin: 0px;
+}
+
+#stopwatch h2 {
+    font-size: 300%;
+}
